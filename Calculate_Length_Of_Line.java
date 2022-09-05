@@ -29,9 +29,12 @@ public class Calculate_LengthOf_Line {
 		System.out.println("length of line2 is: "+length2);
 		String str1 = Double.toString(length1);
     	        String str2 = Double.toString(length2);
-		if(str1.equals(str2))
-			System.out.println("both lines are equal");
+		int res= str1.compareTo(str2);
+		if(res > 0)
+			System.out.println("line1 is greater than line2");
+		else if(res < 0)
+			System.out.println("line2 is greater than line1");
 		else
-			System.out.println("both lines are not equal");
+			System.out.println("both lines are equal");
 	}
 }
